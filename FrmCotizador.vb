@@ -1,12 +1,12 @@
 ﻿Public Class FrmCotizador
     Const TasaIva As Double = 0.16
-    Const TasaFega As Double = 0.025
-    Dim TasaVidaMes As Double = 1.5
-    Dim TasaVidaDia As Double = TasaVidaMes / 30.4
-    Dim TasaVidaAnual As Double = TasaVidaMes * 12
+    Dim TasaFega As Double = 0.0
+    Dim TasaVidaMes As Double = 0
+    Dim TasaVidaDia As Double = 0
+    Dim TasaVidaAnual As Double = 0
+    Dim TasaAnualIva As Double = 0
     Dim TasaAnual As Double = 0
     Dim TasaResidual As Double = 0
-    Dim TasaAnualIva As Double = 0.0 * (1 + TasaIva)
     Dim Bandera As Boolean = False
     Dim Cat As String
     Dim ContRecur As Double = 0
@@ -29,6 +29,13 @@
 
 
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
+        TasaVidaMes = Me.ClientesTableAdapter.SacaConfiguracion("porc_seg")
+        TasaFega = Me.ClientesTableAdapter.SacaConfiguracion("porc_fega")
+        TasaVidaDia = TasaVidaMes / 30.4
+        TasaVidaAnual = TasaVidaMes * 12
+        TasaAnualIva = 0.0 * (1 + TasaIva)
+
+
         Me.ClientesTableAdapter.Fill(Me.ProductionDataSet.Clientes)
         Me.LI_PeriodosTableAdapter.Fill(Me.ProductionDataSet.LI_Periodos)
         Me.LI_PlazosTableAdapter.Fill(Me.ProductionDataSet.LI_Plazos)
