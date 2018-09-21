@@ -1,7 +1,7 @@
 ﻿Public Class FrmCotizador
     Const TasaIva As Double = 0.16
-    Const TasaFega As Double = 0.015
-    Dim TasaVidaMes As Double = 1
+    Const TasaFega As Double = 0.025
+    Dim TasaVidaMes As Double = 1.5
     Dim TasaVidaDia As Double = TasaVidaMes / 30.4
     Dim TasaVidaAnual As Double = TasaVidaMes * 12
     Dim TasaAnual As Double = 0
