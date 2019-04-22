@@ -4,7 +4,7 @@
     <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
       <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
         <Connections>
-          <Connection ConnectionStringObject="Data Source=server-raid;Initial Catalog=Production;Persist Security Info=True;User ID=User_PRO;Password=User_PRO2015" IsAppSettingsProperty="false" Modifier="Assembly" Name="server-raid.Production.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
+          <Connection ConnectionStringObject="Data Source=server-raid2;Initial Catalog=Production;Persist Security Info=True;User ID=User_PRO;Password=User_PRO2015" IsAppSettingsProperty="false" Modifier="Assembly" Name="server-raid.Production.dbo" ParameterPrefix="@" Provider="System.Data.SqlClient" />
         </Connections>
         <Tables>
           <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LI_PeriodosTableAdapter" GeneratorDataComponentClassName="LI_PeriodosTableAdapter" Name="LI_Periodos" UserDataComponentName="LI_PeriodosTableAdapter">
@@ -832,7 +832,7 @@ WHERE        (Anexo = @Anexo)</CommandText>
             </xs:sequence>
           </xs:complexType>
         </xs:element>
-        <xs:element name="Rentasdep" msprop:Generator_TableClassName="RentasdepDataTable" msprop:Generator_TableVarName="tableRentasdep" msprop:Generator_TablePropName="Rentasdep" msprop:Generator_RowDeletingName="RentasdepRowDeleting" msprop:Generator_RowChangingName="RentasdepRowChanging" msprop:Generator_RowEvHandlerName="RentasdepRowChangeEventHandler" msprop:Generator_RowDeletedName="RentasdepRowDeleted" msprop:Generator_UserTableName="Rentasdep" msprop:Generator_RowChangedName="RentasdepRowChanged" msprop:Generator_RowEvArgName="RentasdepRowChangeEvent" msprop:Generator_RowClassName="RentasdepRow">
+        <xs:element name="Rentasdep" msprop:Generator_TableClassName="RentasdepDataTable" msprop:Generator_TableVarName="tableRentasdep" msprop:Generator_RowChangedName="RentasdepRowChanged" msprop:Generator_TablePropName="Rentasdep" msprop:Generator_RowDeletingName="RentasdepRowDeleting" msprop:Generator_RowChangingName="RentasdepRowChanging" msprop:Generator_RowEvHandlerName="RentasdepRowChangeEventHandler" msprop:Generator_RowDeletedName="RentasdepRowDeleted" msprop:Generator_RowClassName="RentasdepRow" msprop:Generator_UserTableName="Rentasdep" msprop:Generator_RowEvArgName="RentasdepRowChangeEvent">
           <xs:complexType>
             <xs:sequence>
               <xs:element name="Anexo" msprop:Generator_ColumnVarNameInTable="columnAnexo" msprop:Generator_ColumnPropNameInRow="Anexo" msprop:Generator_ColumnPropNameInTable="AnexoColumn" msprop:Generator_UserColumnName="Anexo" minOccurs="0">
